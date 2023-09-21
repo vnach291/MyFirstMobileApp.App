@@ -21,7 +21,8 @@
             
             <Button Grid.Row="0"
                     Grid.Column="0"
-                    Text="{Binding StackLayoutTitle}" />
+                    Text="{Binding StackLayoutTitle}" 
+                    Command="{Binding OnLayoutsClicked}" />
             
             <Button Grid.Row="0"
                     Grid.Column="1"
