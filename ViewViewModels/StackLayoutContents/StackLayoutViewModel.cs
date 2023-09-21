@@ -13,8 +13,8 @@ namespace MyFirstMobileApp.ViewViewModels.StackLayoutContents
         public static string HorizontalStackTitle { get; } = "Horizontal Stack";
         public static string AbsoluteLayoutTitle { get; } = "Absolute Layout";
 
-        public StackLayoutViewModel() { 
+        //public StackLayoutViewModel() { 
         
-        }
+        //}
     }
 }
