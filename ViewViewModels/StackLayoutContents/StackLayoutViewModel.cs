@@ -1,4 +1,6 @@
-﻿using System;
+﻿using MyFirstMobileApp.Models;
+using MyFirstMobileApp.ViewModels;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,15 +8,30 @@ using System.Threading.Tasks;
 
 namespace MyFirstMobileApp.ViewViewModels.StackLayoutContents
 {
-    public static class StackLayoutViewModel
+    public class StackLayoutViewModel : BaseViewModel
     {
-        public static string InnerStackLayoutTitle { get; } = "Stack Layout";
-        public static string VerticalStackTitle { get; } = "Vertical Stack";
-        public static string HorizontalStackTitle { get; } = "Horizontal Stack";
-        public static string AbsoluteLayoutTitle { get; } = "Absolute Layout";
-
-        //public StackLayoutViewModel() { 
         
-        //}
+
+        //Titles
+        public string Title { get; set; } = TitleLayouts.PageTitle;
+        public string InnerStackLayoutTitle { get; set; } = TitleLayouts.InnerStackLayoutTitle;
+        public string VerticalStackTitle { get; set; } = TitleLayouts.InnerStackLayoutTitle;
+        public string HorizontalStackTitle { get; set; } = TitleLayouts.InnerStackLayoutTitle;
+        public string AbsoluteLayoutTitle { get; set; } = TitleLayouts.InnerStackLayoutTitle;
+
+        //Constructor 
+        public StackLayoutViewModel() 
+        {
+
+            Title = TitleLayouts.PageTitle;
+            InnerStackLayoutTitle = TitleLayouts.InnerStackLayoutTitle;
+            VerticalStackTitle = TitleLayouts.VerticalStackTitle;
+            HorizontalStackTitle = TitleLayouts.HorizontalStackTitle;
+            AbsoluteLayoutTitle = TitleLayouts.AbsoluteLayoutTitle;
+             
+        
+
+             
+        }
     }
 }

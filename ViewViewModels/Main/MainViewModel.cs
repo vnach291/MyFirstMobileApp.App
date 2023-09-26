@@ -15,8 +15,10 @@ namespace MyFirstMobileApp.ViewViewModels.Main
 
         //public String Layouts { get; set; } = TitleMain.Layouts;
 
-        //Button Commands
+        //Button Titles
 
+
+        //Button Commands
         public ICommand OnLayoutsClicked { get; set; }
 
         public MainViewModel() 

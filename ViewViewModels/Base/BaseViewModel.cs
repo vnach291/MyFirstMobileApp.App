@@ -14,6 +14,10 @@ namespace MyFirstMobileApp.ViewModels
 
         string title = string.Empty;
         string button = string.Empty;
+        string innerbutton1 = string.Empty;
+        string innerbutton2 = string.Empty;
+        string innerbutton3 = string.Empty;
+        string innerbutton4 = string.Empty;
         public string Title
         {
             get { return title; }
@@ -25,6 +29,7 @@ namespace MyFirstMobileApp.ViewModels
             get { return button; }
             set { SetProperty(ref button, value); }
         }
+
 
         protected bool SetProperty<T>(ref T backingStore, T value,
                                       [CallerMemberName] string propertyName = "",
