@@ -10,6 +10,7 @@ namespace MyFirstMobileApp.Models
     //this is where I set the page values after clicking the first button on the first page
     public static class TitleLayouts
     {
+        // getter methods for the titles on the second page (after the mainpage button press) 
         public static string PageTitle { get; } = "Layouts Menu";
         public static string InnerStackLayoutTitle { get; } = "Stack Layout";
         public static string VerticalStackTitle { get; } = "Vertical Stack";

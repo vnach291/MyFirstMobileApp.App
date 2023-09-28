@@ -28,7 +28,6 @@ namespace MyFirstMobileApp.ViewViewModels.Main
 
             // Set Commands
             OnLayoutsClicked = new Command(OnLayoutsClickedAsync);
-
         }
         private async void OnLayoutsClickedAsync()
         {

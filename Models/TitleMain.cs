@@ -8,6 +8,7 @@ namespace MyFirstMobileApp.Models
 {
     public static class TitleMain
     {
+        // title and subtitle getter methods
         public static string mainTitle { get; } = "Main Page View";
         public static string StackLayoutTitle { get; } = "Stack Layout";
 

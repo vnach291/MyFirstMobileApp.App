@@ -10,11 +10,13 @@
               ColumnSpacing="15">
 
             <Grid.RowDefinitions>
+                <!-- Set height to 75 DIPs (device-independant pixels) --> 
                 <RowDefinition Height="75"/>
                 <RowDefinition Height="75"/>
             </Grid.RowDefinitions>
 
             <Grid.ColumnDefinitions>
+                <!-- Column width spreads out with this -->
                 <ColumnDefinition Width="*" />
                 <ColumnDefinition Width="*" />
             </Grid.ColumnDefinitions>
@@ -23,7 +25,9 @@
                     Grid.Column="0"
                     Text="{Binding StackLayoutTitle}" 
                     Command="{Binding OnLayoutsClicked}" />
+            <!-- binding avoids hardcoding -->
             
+            <!-- current buttons don't lead anywhere for right now-->
             <Button Grid.Row="0"
                     Grid.Column="1"
                     Text="0,1" />

@@ -14,14 +14,13 @@
                 <RowDefinition Height="40"/>
                 <RowDefinition Height="40"/>
                 <RowDefinition Height="40"/>
-                
             </Grid.RowDefinitions>
 
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*" />
                 <ColumnDefinition Width="*" />
             </Grid.ColumnDefinitions>
-
+            <!-- Buttons for the XAML Page -> binded to titles -->
             <Button Grid.Row="0"
                     Grid.Column="0"
                     Grid.ColumnSpan="2"
@@ -29,20 +28,18 @@
 
             <Button Grid.Row="1"
                     Grid.Column="0"
-                    
                     Text="{Binding VerticalStackTitle}" />
 
             <Button Grid.Row="1"
                     Grid.Column="1"
                     Text="{Binding HorizontalStackTitle}" />
-
+            
+            <!-- Spanning makes sure that the button goes the entire way (in this case across the entire row -->
             <Button Grid.Row="2"
                     Grid.Column="0"
                     Grid.ColumnSpan="2"
                     Text="{Binding AbsoluteLayoutTitle}" />
-
-
-
+            
         </Grid>
     </VerticalStackLayout>
 </ContentPage>

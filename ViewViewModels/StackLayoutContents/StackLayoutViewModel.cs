@@ -10,8 +10,6 @@ namespace MyFirstMobileApp.ViewViewModels.StackLayoutContents
 {
     public class StackLayoutViewModel : BaseViewModel
     {
-        
-
         //Titles
         public string Title { get; set; } = TitleLayouts.PageTitle;
         public string InnerStackLayoutTitle { get; set; } = TitleLayouts.InnerStackLayoutTitle;
@@ -22,16 +20,11 @@ namespace MyFirstMobileApp.ViewViewModels.StackLayoutContents
         //Constructor 
         public StackLayoutViewModel() 
         {
-
             Title = TitleLayouts.PageTitle;
             InnerStackLayoutTitle = TitleLayouts.InnerStackLayoutTitle;
             VerticalStackTitle = TitleLayouts.VerticalStackTitle;
             HorizontalStackTitle = TitleLayouts.HorizontalStackTitle;
             AbsoluteLayoutTitle = TitleLayouts.AbsoluteLayoutTitle;
-             
-        
-
-             
         }
     }
 }

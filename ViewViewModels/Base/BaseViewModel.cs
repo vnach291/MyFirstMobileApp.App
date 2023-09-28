@@ -14,10 +14,7 @@ namespace MyFirstMobileApp.ViewModels
 
         string title = string.Empty;
         string button = string.Empty;
-        string innerbutton1 = string.Empty;
-        string innerbutton2 = string.Empty;
-        string innerbutton3 = string.Empty;
-        string innerbutton4 = string.Empty;
+        
         public string Title
         {
             get { return title; }
