@@ -3,15 +3,42 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MyFirstMobileApp.ViewViewModels.InnerStackLayoutContents.InnerStackLayoutView"
              Title="{Binding Title}">
-    <!-- Title should be "StackLayout"-->
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-        
-        
-    </VerticalStackLayout>
+    
+   
+    <StackLayout>
+
+        <StackLayout VerticalOptions="CenterAndExpand"
+                      HorizontalOptions="CenterAndExpand">
+
+            <BoxView WidthRequest="150"
+                     HeightRequest="150"
+                     Color="LightBlue" />
+
+
+        </StackLayout>
+
+        <StackLayout VerticalOptions="StartAndExpand"
+                      HorizontalOptions="EndAndExpand">
+
+            <BoxView WidthRequest="200"
+                     HeightRequest="100"
+                     Color="LightGreen" />
+
+
+        </StackLayout>
+
+        <StackLayout VerticalOptions="EndAndExpand"
+                      HorizontalOptions="Start">
+
+            <BoxView WidthRequest="100"
+                     HeightRequest="200"
+                     Color="Pink" />
+
+
+        </StackLayout>
+
+    </StackLayout>
+
 </ContentPage>
 
 
