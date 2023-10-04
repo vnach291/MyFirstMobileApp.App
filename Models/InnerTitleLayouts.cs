@@ -8,7 +8,8 @@ namespace MyFirstMobileApp.Models
 {
     public static class InnerTitleLayouts
     {
-        public static string InnerPageTitle { get; } = "Stack Layouts";
+        //setting a page title for the colored-box view
+        public static string InnerPageTitle { get; } = "Stack Layout";
     }
 }
 

@@ -33,6 +33,7 @@ namespace MyFirstMobileApp.ViewViewModels.StackLayoutContents
 
         }
 
+        //need another method to make button work, and travel to the next page --> borrow this same setup from the titlemain page
         private async void OnLayoutsClickedAsync()
         {
             await Application.Current.MainPage.Navigation.PushAsync(new InnerStackLayoutView());

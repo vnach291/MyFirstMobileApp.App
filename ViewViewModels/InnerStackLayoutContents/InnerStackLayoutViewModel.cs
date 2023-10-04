@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using static Android.Icu.Text.CaseMap;
+
 
 namespace MyFirstMobileApp.ViewViewModels.InnerStackLayoutContents
 {
@@ -16,7 +16,7 @@ namespace MyFirstMobileApp.ViewViewModels.InnerStackLayoutContents
 
         public InnerStackLayoutViewModel()
         {
-            Title = TitleLayouts.PageTitle;
+            Title = InnerTitleLayouts.InnerPageTitle;
             
         }
     }

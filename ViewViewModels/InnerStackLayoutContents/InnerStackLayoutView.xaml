@@ -2,31 +2,31 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MyFirstMobileApp.ViewViewModels.InnerStackLayoutContents.InnerStackLayoutView"
-             Title="{Binding Title}">
-    
-   
+             Title="{Binding InnerTitle}">
+     
     <StackLayout>
-
+        
+        <!--Box 1 at the top -->
         <StackLayout VerticalOptions="CenterAndExpand"
-                      HorizontalOptions="CenterAndExpand">
-
+                     HorizontalOptions="CenterAndExpand">
+            
             <BoxView WidthRequest="150"
                      HeightRequest="150"
                      Color="LightBlue" />
-
-
+        
         </StackLayout>
 
+        <!--Box 2 in the middle -->
         <StackLayout VerticalOptions="StartAndExpand"
-                      HorizontalOptions="EndAndExpand">
+                     HorizontalOptions="EndAndExpand">
 
             <BoxView WidthRequest="200"
                      HeightRequest="100"
                      Color="LightGreen" />
-
-
+            
         </StackLayout>
 
+        <!--Box 3 at the bottom middle -->
         <StackLayout VerticalOptions="EndAndExpand"
                       HorizontalOptions="Start">
 
