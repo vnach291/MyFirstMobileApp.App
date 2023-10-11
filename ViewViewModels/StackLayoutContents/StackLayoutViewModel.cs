@@ -1,6 +1,9 @@
 ﻿using MyFirstMobileApp.Models;
 using MyFirstMobileApp.ViewModels;
+using MyFirstMobileApp.ViewViewModels.InnerAbsoluteStackLayoutContents;
+using MyFirstMobileApp.ViewViewModels.InnerHorizontalStackLayoutContents;
 using MyFirstMobileApp.ViewViewModels.InnerStackLayoutContents;
+using MyFirstMobileApp.ViewViewModels.InnerVerticalStackLayoutContents;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -18,8 +21,13 @@ namespace MyFirstMobileApp.ViewViewModels.StackLayoutContents
         public string VerticalStackTitle { get; set; } = TitleLayouts.InnerStackLayoutTitle;
         public string HorizontalStackTitle { get; set; } = TitleLayouts.InnerStackLayoutTitle;
         public string AbsoluteLayoutTitle { get; set; } = TitleLayouts.InnerStackLayoutTitle;
+        public string FlexLayoutTitle { get; set; } = TitleLayouts.FlexLayoutTitle;
 
         public ICommand OnLayoutsClicked { get; set; }
+        public ICommand OnLayoutsClickedToVerticalStack { get; set; }
+        public ICommand OnLayoutsClickedToHorizontalStack { get; set; }
+        public ICommand OnLayoutsClickedToAbsoluteStack { get; set; }
+
         //Constructor 
         public StackLayoutViewModel() 
         {
@@ -28,8 +36,13 @@ namespace MyFirstMobileApp.ViewViewModels.StackLayoutContents
             VerticalStackTitle = TitleLayouts.VerticalStackTitle;
             HorizontalStackTitle = TitleLayouts.HorizontalStackTitle;
             AbsoluteLayoutTitle = TitleLayouts.AbsoluteLayoutTitle;
+            FlexLayoutTitle = TitleLayouts.FlexLayoutTitle;
 
             OnLayoutsClicked = new Command(OnLayoutsClickedAsync);
+            OnLayoutsClickedToVerticalStack = new Command(OnLayoutsClickedAsyncToVerticalStack);
+            OnLayoutsClickedToHorizontalStack = new Command(OnLayoutsClickedAsyncToHorizontalStack);
+            OnLayoutsClickedToAbsoluteStack = new Command(OnLayoutsClickedAsyncToAbsoluteStack);
+
 
         }
 
@@ -38,5 +51,20 @@ namespace MyFirstMobileApp.ViewViewModels.StackLayoutContents
         {
             await Application.Current.MainPage.Navigation.PushAsync(new InnerStackLayoutView());
         }
+
+        private async void OnLayoutsClickedAsyncToVerticalStack()
+        {
+            await Application.Current.MainPage.Navigation.PushAsync(new InnerVerticalStackLayoutView());
+        }
+
+        private async void OnLayoutsClickedAsyncToHorizontalStack()
+        {
+            await Application.Current.MainPage.Navigation.PushAsync(new InnerHorizontalStackLayoutView());
+        }
+        private async void OnLayoutsClickedAsyncToAbsoluteStack()
+        {
+            await Application.Current.MainPage.Navigation.PushAsync(new InnerAbsoluteStackLayoutView());
+        }
+
     }
 }

@@ -14,6 +14,7 @@
                 <RowDefinition Height="40"/>
                 <RowDefinition Height="40"/>
                 <RowDefinition Height="40"/>
+                <RowDefinition Height="40"/>
             </Grid.RowDefinitions>
 
             <Grid.ColumnDefinitions>
@@ -30,18 +31,27 @@
 
             <Button Grid.Row="1"
                     Grid.Column="0"
-                    Text="{Binding VerticalStackTitle}" />
+                    Text="{Binding VerticalStackTitle}"
+                    Command="{Binding OnLayoutsClickedToVerticalStack}"/>
 
             <Button Grid.Row="1"
                     Grid.Column="1"
-                    Text="{Binding HorizontalStackTitle}" />
+                    Text="{Binding HorizontalStackTitle}"
+                    Command="{Binding OnLayoutsClickedToHorizontalStack}"/>
             
             <!-- Spanning makes sure that the button goes the entire way (in this case across the entire row -->
             <Button Grid.Row="2"
                     Grid.Column="0"
                     Grid.ColumnSpan="2"
-                    Text="{Binding AbsoluteLayoutTitle}" />
-            
+                    Text="{Binding AbsoluteLayoutTitle}"
+                    Command="{Binding OnLayoutsClickedToAbsoluteStack}" />
+
+            <Button Grid.Row="3"
+                    Grid.Column="0"
+                    Grid.ColumnSpan="2"
+                    Text="{Binding FlexLayoutTitle}" />
+
+
         </Grid>
     </VerticalStackLayout>
 </ContentPage>
