@@ -61,6 +61,9 @@
 	  <MauiXaml Update="ViewViewModels\InnerAbsoluteStackLayoutContents\InnerAbsoluteStackLayoutView.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	  <MauiXaml Update="ViewViewModels\InnerFlexStackLayoutContents\InnerFlexStackLayoutView.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="ViewViewModels\InnerHorizontalStackLayoutContents\InnerHorizontalStackLayoutView.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>

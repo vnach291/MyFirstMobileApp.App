@@ -12,6 +12,10 @@ namespace MyFirstMobileApp.ViewViewModels.Main
 {
     public class MainViewModel : BaseViewModel
     {
+        public string ImageTitle { get; }
+        public string CollectionTitle { get; private set; }
+        public string ControlTitle { get; }
+        public string SQLLiteTitle { get; }
 
         //public String Layouts { get; set; } = TitleMain.Layouts;
 
@@ -25,6 +29,11 @@ namespace MyFirstMobileApp.ViewViewModels.Main
         {
             Title = TitleMain.mainTitle;
             StackLayoutTitle = TitleMain.StackLayoutTitle;
+            ImageTitle = TitleMain.ImageTitle;
+            CollectionTitle = TitleMain.CollectionTitle;
+            ControlTitle = TitleMain.ControlTitle;
+            SQLLiteTitle = TitleMain.SQLLiteTitle; 
+
 
             // Set Commands
             OnLayoutsClicked = new Command(OnLayoutsClickedAsync);

@@ -1,6 +1,7 @@
 ﻿using MyFirstMobileApp.Models;
 using MyFirstMobileApp.ViewModels;
 using MyFirstMobileApp.ViewViewModels.InnerAbsoluteStackLayoutContents;
+using MyFirstMobileApp.ViewViewModels.InnerFlexStackLayoutContents;
 using MyFirstMobileApp.ViewViewModels.InnerHorizontalStackLayoutContents;
 using MyFirstMobileApp.ViewViewModels.InnerStackLayoutContents;
 using MyFirstMobileApp.ViewViewModels.InnerVerticalStackLayoutContents;
@@ -27,6 +28,7 @@ namespace MyFirstMobileApp.ViewViewModels.StackLayoutContents
         public ICommand OnLayoutsClickedToVerticalStack { get; set; }
         public ICommand OnLayoutsClickedToHorizontalStack { get; set; }
         public ICommand OnLayoutsClickedToAbsoluteStack { get; set; }
+        public ICommand OnLayoutsClickedToFlexStack { get; set; }
 
         //Constructor 
         public StackLayoutViewModel() 
@@ -42,6 +44,8 @@ namespace MyFirstMobileApp.ViewViewModels.StackLayoutContents
             OnLayoutsClickedToVerticalStack = new Command(OnLayoutsClickedAsyncToVerticalStack);
             OnLayoutsClickedToHorizontalStack = new Command(OnLayoutsClickedAsyncToHorizontalStack);
             OnLayoutsClickedToAbsoluteStack = new Command(OnLayoutsClickedAsyncToAbsoluteStack);
+            OnLayoutsClickedToFlexStack = new Command(OnLayoutsClickedAsyncToFlexStack);
+
 
 
         }
@@ -64,6 +68,10 @@ namespace MyFirstMobileApp.ViewViewModels.StackLayoutContents
         private async void OnLayoutsClickedAsyncToAbsoluteStack()
         {
             await Application.Current.MainPage.Navigation.PushAsync(new InnerAbsoluteStackLayoutView());
+        }
+        private async void OnLayoutsClickedAsyncToFlexStack()
+        {
+            await Application.Current.MainPage.Navigation.PushAsync(new InnerFlexStackLayoutView());
         }
 
     }
