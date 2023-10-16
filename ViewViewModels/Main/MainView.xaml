@@ -11,9 +11,9 @@
 
             <Grid.RowDefinitions>
                 <!-- Set height to 75 DIPs (device-independant pixels) --> 
-                <RowDefinition Height="75"/>
-                <RowDefinition Height="75"/>
-                <RowDefinition Height="75"/>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="40"/>
             </Grid.RowDefinitions>
 
             <Grid.ColumnDefinitions>
@@ -41,10 +41,11 @@
                     Grid.Column="1"
                     Text="{Binding ControlTitle}" />
 
-            <Button Grid.Row="1"
-                    Grid.Column="1"
+            <Button Grid.Row="2"
+                    Grid.Column="0"
                     Text="{Binding SQLLiteTitle}"
                     Grid.ColumnSpan="2" />
+            
 
         </Grid>
    

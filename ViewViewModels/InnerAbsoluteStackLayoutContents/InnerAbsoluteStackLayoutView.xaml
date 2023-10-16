@@ -4,8 +4,72 @@
              x:Class="MyFirstMobileApp.ViewViewModels.InnerAbsoluteStackLayoutContents.InnerAbsoluteStackLayoutView"
              Title="{Binding InnerTitle}">
     <AbsoluteLayout>
-        <BoxView Color="Blue"
-                 AbsoluteLayout.LayoutBounds="0.5, 0, 100, 50"
+        <BoxView Color="LightBlue"
+                 AbsoluteLayout.LayoutBounds="0.1, 0.3, 40, 25"
                  AbsoluteLayout.LayoutFlags="PositionProportional"/>
+        
+        <BoxView Color="Blue"
+                 AbsoluteLayout.LayoutBounds="0.36666, 0.3, 40, 25"
+                 AbsoluteLayout.LayoutFlags="PositionProportional"/>
+        
+        <BoxView Color="Blue"
+                 AbsoluteLayout.LayoutBounds="0.6333, 0.3, 40, 25"
+                 AbsoluteLayout.LayoutFlags="PositionProportional"/>
+        
+        <BoxView Color="Blue"
+                 AbsoluteLayout.LayoutBounds="0.9, 0.3, 40, 25"
+                 AbsoluteLayout.LayoutFlags="PositionProportional"/>
+
+
+        <BoxView Color="Red"
+                 AbsoluteLayout.LayoutBounds="0.1, 0.4, 40, 25"
+                 AbsoluteLayout.LayoutFlags="PositionProportional"/>
+        
+        <BoxView Color="Red"
+                 AbsoluteLayout.LayoutBounds="0.36666, 0.4, 40, 25"
+                 AbsoluteLayout.LayoutFlags="PositionProportional"/>
+        
+        <BoxView Color="Red"
+                 AbsoluteLayout.LayoutBounds="0.6333, 0.4, 40, 25"
+                 AbsoluteLayout.LayoutFlags="PositionProportional"/>
+        
+        <BoxView Color="Red"
+                 AbsoluteLayout.LayoutBounds="0.9, 0.4, 40, 25"
+                 AbsoluteLayout.LayoutFlags="PositionProportional"/>
+
+        <BoxView Color="Purple"
+                 AbsoluteLayout.LayoutBounds="0.1, 0.5, 40, 25"
+                 AbsoluteLayout.LayoutFlags="PositionProportional"/>
+        
+        <BoxView Color="Purple"
+                 AbsoluteLayout.LayoutBounds="0.36666, 0.5, 40, 25"
+                 AbsoluteLayout.LayoutFlags="PositionProportional"/>
+        
+        <BoxView Color="Purple"
+                 AbsoluteLayout.LayoutBounds="0.6333, 0.5, 40, 25"
+                 AbsoluteLayout.LayoutFlags="PositionProportional"/>
+        
+        <BoxView Color="Purple"
+                 AbsoluteLayout.LayoutBounds="0.9, 0.5, 40, 25"
+                 AbsoluteLayout.LayoutFlags="PositionProportional"/>
+
+        <BoxView Color="Green"
+                 AbsoluteLayout.LayoutBounds="0.1, 0.6, 40, 25"
+                 AbsoluteLayout.LayoutFlags="PositionProportional"/>
+
+        <BoxView Color="Green"
+                 AbsoluteLayout.LayoutBounds="0.36666, 0.6, 40, 25"
+                 AbsoluteLayout.LayoutFlags="PositionProportional"/>
+
+        <BoxView Color="Green"
+                 AbsoluteLayout.LayoutBounds="0.6333, 0.6, 40, 25"
+                 AbsoluteLayout.LayoutFlags="PositionProportional"/>
+
+        <BoxView Color="Green"
+                 AbsoluteLayout.LayoutBounds="0.9, 0.6, 40, 25"
+                 AbsoluteLayout.LayoutFlags="PositionProportional"/>
+
+
+
     </AbsoluteLayout>
 </ContentPage>
