@@ -4,15 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MyFirstMobileApp.Models
+namespace MyFirstMobileApp.Models.InnerModels
 {
-    public static class InnerTitleLayouts
+    public static class InnerFlexTitleLayouts
     {
         //setting a page title for the colored-box view
-        public static string InnerPageTitle { get; } = "Stack Layout";
+        public static string InnerPageTitle { get; } = "Flex Layout";
     }
 }
-
-
-
-

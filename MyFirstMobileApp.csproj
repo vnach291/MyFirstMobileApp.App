@@ -58,19 +58,22 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <MauiXaml Update="ViewViewModels\InnerAbsoluteStackLayoutContents\InnerAbsoluteStackLayoutView.xaml">
+	  <MauiXaml Update="ViewViewModels\AppImages\URI\URIView.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="ViewViewModels\InnerFlexStackLayoutContents\InnerFlexStackLayoutView.xaml">
+	  <MauiXaml Update="ViewViewModels\InnerLayoutContents\InnerAbsoluteStackLayoutContents\InnerAbsoluteStackLayoutView.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="ViewViewModels\InnerHorizontalStackLayoutContents\InnerHorizontalStackLayoutView.xaml">
+	  <MauiXaml Update="ViewViewModels\InnerLayoutContents\InnerFlexStackLayoutContents\InnerFlexStackLayoutView.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="ViewViewModels\InnerStackLayoutContents\InnerStackLayoutView.xaml">
+	  <MauiXaml Update="ViewViewModels\InnerLayoutContents\InnerHorizontalStackLayoutContents\InnerHorizontalStackLayoutView.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="ViewViewModels\InnerVerticalStackLayoutContents\InnerVerticalStackLayoutView.xaml">
+	  <MauiXaml Update="ViewViewModels\InnerLayoutContents\InnerStackLayoutContents\InnerStackLayoutView.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="ViewViewModels\InnerLayoutContents\InnerVerticalStackLayoutContents\InnerVerticalStackLayoutView.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="ViewViewModels\Main\MainView.xaml">
@@ -79,6 +82,11 @@
 	  <MauiXaml Update="ViewViewModels\StackLayoutContents\StackLayoutView.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Folder Include="ViewViewModels\AppImages\Embedded\" />
+	  <Folder Include="ViewViewModels\AppImages\ActivityIndicator\" />
 	</ItemGroup>
 
 </Project>

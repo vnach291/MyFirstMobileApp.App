@@ -12,7 +12,7 @@
             <BoxView WidthRequest="100"
                      HeightRequest="100"
                      Color="Red" />
-
+            
         </StackLayout>
 
         <!-- Green box second -->
