@@ -58,6 +58,9 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <MauiXaml Update="ViewViewModels\AppImages\AppImagesContents\AppImagesView.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="ViewViewModels\AppImages\URI\URIView.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>

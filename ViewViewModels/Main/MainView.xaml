@@ -31,7 +31,8 @@
             <!-- current buttons don't lead anywhere for right now-->
             <Button Grid.Row="0"
                     Grid.Column="1" 
-                    Text="{Binding ImageTitle}"/>
+                    Text="{Binding ImageTitle}"
+                    Command="{Binding OnLayoutsClickedToImages}"/>
 
             <Button Grid.Row="1"
                     Grid.Column="0" 
