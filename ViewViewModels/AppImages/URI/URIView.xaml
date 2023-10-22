@@ -3,19 +3,10 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MyFirstMobileApp.ViewViewModels.AppImages.URI.URIView"
              Title="{Binding Title}">
+
+    <StackLayout>
+        <Image Source="{Binding GetImageSource}"
+               Aspect="AspectFit" />
+    </StackLayout>
     
-    <VerticalStackLayout HorizontalOptions="Center">
-
-        <StackLayout>
-            <Label Text="Test" />
-            <Image Source="{Binding GetImageSource}"
-                   Aspect="AspectFill" />
-        </StackLayout>
-
-        <StackLayout>
-            <Label Text="Test 2" />
-            <Image Source="{Binding GetImageSource}" />
-        </StackLayout>
-        
-    </VerticalStackLayout>
 </ContentPage>
