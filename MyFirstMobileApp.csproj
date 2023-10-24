@@ -58,7 +58,17 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <None Remove="Resources\Images\bobafett.jpg" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <MauiXaml Update="ViewViewModels\AppImages\ActivityIndicator\ActivityIndicatorView.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="ViewViewModels\AppImages\AppImagesContents\AppImagesView.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="ViewViewModels\AppImages\Embedded\EmbeddedView.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="ViewViewModels\AppImages\URI\URIView.xaml">
@@ -85,11 +95,6 @@
 	  <MauiXaml Update="ViewViewModels\StackLayoutContents\StackLayoutView.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	</ItemGroup>
-
-	<ItemGroup>
-	  <Folder Include="ViewViewModels\AppImages\Embedded\" />
-	  <Folder Include="ViewViewModels\AppImages\ActivityIndicator\" />
 	</ItemGroup>
 
 </Project>

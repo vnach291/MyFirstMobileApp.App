@@ -1,5 +1,6 @@
 ﻿using MyFirstMobileApp.Models;
 using MyFirstMobileApp.ViewModels;
+using MyFirstMobileApp.ViewViewModels.AppImages.Embedded;
 using MyFirstMobileApp.ViewViewModels.AppImages.URI;
 using MyFirstMobileApp.ViewViewModels.InnerStackLayoutContents;
 using System;
@@ -30,6 +31,7 @@ namespace MyFirstMobileApp.ViewViewModels.AppImages.AppImagesContents
             ActivityIndicatorTitle = TitleApps.ActivityIndicator;
 
             OnLayoutsClickedtoURIImages = new Command(OnLayoutsClickedAsynctoURIImages);
+            OnLayoutsClickedToEmbeddedImages = new Command(OnLayoutsClickedAsynctoEmbeddedImages);
             //OnLayoutsClickedToEmbeddedImages = new Command(OnLayoutsClickedAsyncToEmbeddedImages);
             //OnLayoutsClickedToActivityIndicator = new Command(OnLayoutsClickedAsyncToActivityIndicator);
         }
@@ -37,6 +39,12 @@ namespace MyFirstMobileApp.ViewViewModels.AppImages.AppImagesContents
         {
             await Application.Current.MainPage.Navigation.PushAsync(new URIView());
         }
+
+        private async void OnLayoutsClickedAsynctoEmbeddedImages()
+        {
+            await Application.Current.MainPage.Navigation.PushAsync(new EmbeddedView());
+        }
+
 
 
     }
