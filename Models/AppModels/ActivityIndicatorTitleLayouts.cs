@@ -8,6 +8,6 @@ namespace MyFirstMobileApp.Models.AppModels
 {
     public static class ActivityIndicatorTitleLayouts
     {
-        public static string InnerPageTitle { get; } = "ActivityIndicator Images";
+        public static string InnerPageTitle { get; } = "Activity Indicator Images";
     }
 }

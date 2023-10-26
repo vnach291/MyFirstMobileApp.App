@@ -35,7 +35,8 @@
             <Button Grid.Row="1"
                     Grid.Column="0"
                     Grid.ColumnSpan="2"
-                    Text="{Binding ActivityIndicatorTitle}"/>
+                    Text="{Binding ActivityIndicatorTitle}"
+                    Command="{Binding OnLayoutsClickedToActivityIndicator}"/>
 
         </Grid>
     </VerticalStackLayout>

@@ -16,7 +16,7 @@
         
         <!--Bind the IsVisible property of the Image to IsImageVisible-->
         <Grid VerticalOptions="Center"
-              HorizontalOptions="Center"
+              HorizontalOptions="Center">
             <Image Source="{Binding GetImageSource}"
                    IsVisible="{Binding IsImageVisible}" />
         </Grid>
