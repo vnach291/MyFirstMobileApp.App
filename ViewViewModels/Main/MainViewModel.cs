@@ -1,6 +1,7 @@
 ﻿using MyFirstMobileApp.Models;
 using MyFirstMobileApp.ViewModels;
 using MyFirstMobileApp.ViewViewModels.AppImages.AppImagesContents;
+using MyFirstMobileApp.ViewViewModels.Collections.CollectionsContents;
 using MyFirstMobileApp.ViewViewModels.StackLayoutContents;
 using System;
 using System.Collections.Generic;
@@ -25,8 +26,8 @@ namespace MyFirstMobileApp.ViewViewModels.Main
 
         //Button Commands
         public ICommand OnLayoutsClicked { get; set; }
-
         public ICommand OnLayoutsClickedToImages { get; set; }
+        public ICommand OnLayoutsClickedToCollections { get; set; }
 
 
         public MainViewModel() 
@@ -42,6 +43,8 @@ namespace MyFirstMobileApp.ViewViewModels.Main
             // Set Commands
             OnLayoutsClicked = new Command(OnLayoutsClickedAsync);
             OnLayoutsClickedToImages = new Command(OnLayoutsClickedAsyncToImages);
+            OnLayoutsClickedToCollections = new Command(OnLayoutsClickedAsyncToCollections);
+
         }
         private async void OnLayoutsClickedAsync()
         {
@@ -51,6 +54,11 @@ namespace MyFirstMobileApp.ViewViewModels.Main
         private async void OnLayoutsClickedAsyncToImages()
         {
             await Application.Current.MainPage.Navigation.PushAsync(new AppImagesView());
+        }
+
+        private async void OnLayoutsClickedAsyncToCollections()
+        {
+            await Application.Current.MainPage.Navigation.PushAsync(new CollectionsView());
         }
 
     }

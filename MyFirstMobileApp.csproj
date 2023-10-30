@@ -74,6 +74,21 @@
 	  <MauiXaml Update="ViewViewModels\AppImages\URI\URIView.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	  <MauiXaml Update="ViewViewModels\Collections\ButtonCollections\ButtonCollectionsView.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="ViewViewModels\Collections\CollectionsContents\CollectionsView.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="ViewViewModels\Collections\IconCollections\IconCollectionsView.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="ViewViewModels\Collections\ImageCollections\ImageCollectionsView.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="ViewViewModels\Collections\NormalCollections\NormalCollectionsView.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="ViewViewModels\InnerLayoutContents\InnerAbsoluteStackLayoutContents\InnerAbsoluteStackLayoutView.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
@@ -95,6 +110,10 @@
 	  <MauiXaml Update="ViewViewModels\StackLayoutContents\StackLayoutView.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Folder Include="Models\CollectionsModels\" />
 	</ItemGroup>
 
 </Project>

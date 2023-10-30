@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MyFirstMobileApp.ViewViewModels.Collections.CollectionsContents.CollectionsView"
+             Title="{Binding Title}">
+
+    <ContentPage.Resources>
+        <Style TargetType="Button">
+            <Setter Property="Margin" Value="10" />
+        </Style>
+    </ContentPage.Resources>
+    <!-- This is a comment -->
+    <StackLayout Padding="20"
+                 HorizontalOptions="Fill"
+                 VerticalOptions="CenterAndExpand">
+ 
+            <!-- Buttons for the XAML Page -> binded to titles -->
+            <Button Text="{Binding NormalCollectionsTitle}"
+                    Command="{Binding OnLayoutsClickedtoNormalCollections}"
+                    TextColor="Gold"/>
+
+            <Button Text="{Binding ImageCollectionsTitle}"
+                    Command="{Binding OnLayoutsClickedToImageCollections}"
+                    TextColor="Aquamarine"/>
+
+            <Button Text="{Binding ButtonCollectionsTitle}"
+                    Command="{Binding OnLayoutsClickedToButtonCollections}"
+                    TextColor="LimeGreen"/>
+
+            <Button Text="{Binding IconCollectionsTitle}"
+                    Command="{Binding OnLayoutsClickedToIconCollections}"
+                    TextColor="PeachPuff"/>
+
+
+    </StackLayout>
+</ContentPage>
