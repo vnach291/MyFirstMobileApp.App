@@ -29,13 +29,9 @@ namespace MyFirstMobileApp.ViewViewModels.Collections.CollectionsContents
 
         public CollectionsViewModel()
         {
+            
             Title = TitleCollections.PageTitle;
-            NormalCollectionsTitle = TitleCollections.NormalCollections;
-            ImageCollectionsTitle = TitleCollections.ImageCollections;
-            ButtonCollectionsTitle = TitleCollections.ButtonCollections;
-            IconCollectionsTitle = TitleCollections.IconCollections;
-
-
+    
             OnLayoutsClickedtoNormalCollections = new Command(OnLayoutsClickedAsynctoNormalCollections);
             OnLayoutsClickedToImageCollections = new Command(OnLayoutsClickedAsynctoImageCollections);
             OnLayoutsClickedToButtonCollections = new Command(OnLayoutsClickedAsynctoButtonCollections);

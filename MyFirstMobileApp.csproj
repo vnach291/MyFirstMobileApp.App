@@ -112,8 +112,4 @@
 	  </MauiXaml>
 	</ItemGroup>
 
-	<ItemGroup>
-	  <Folder Include="Models\CollectionsModels\" />
-	</ItemGroup>
-
 </Project>

@@ -5,5 +5,6 @@ public partial class NormalCollectionsView : ContentPage
 	public NormalCollectionsView()
 	{
 		InitializeComponent();
+		BindingContext = new NormalCollectionsViewModel();
 	}
 }
