@@ -14,19 +14,19 @@
     </ContentPage.Resources>
 
     <CollectionView x:Name="ItemsListView"
-                    ItemsSource="{Binding GuardiansCollection}"
+                    ItemsSource="{Binding ElementsCollection}"
                     SelectionMode="None"
                     ItemsLayout="VerticalList">
 
         <CollectionView.ItemTemplate>
-            <DataTemplate x:DataType="local:ActorCharacterInfo">
+            <DataTemplate x:DataType="local:ElementDiagrams">
                 <StackLayout>
                     <FlexLayout Direction="Row" JustifyContent="Start" AlignItems="Start">
-                        <Image Source="{Binding ActorImage}" Aspect="AspectFill" WidthRequest="250" />
+                        <Image Source="{Binding ElementImage}" Aspect="AspectFill" WidthRequest="250" />
 
                         <StackLayout FlexLayout.Grow="1" Padding="5" HorizontalOptions="StartAndExpand">
-                            <Label Text="{Binding ActorName}" FontAttributes="Bold" TextColor="CadetBlue" HorizontalOptions="Start" WidthRequest="100" />
-                            <Label Text="{Binding CharacterName}" FontAttributes="Italic, Bold" TextColor="Blue" HorizontalOptions="Start" WidthRequest="100"/>
+                            <Label Text="{Binding ElementName}" FontAttributes="Bold" TextColor="CadetBlue" HorizontalOptions="Start" WidthRequest="100" />
+                            <Label Text="{Binding ElementAbbreviation}" FontAttributes="Italic, Bold" TextColor="Blue" HorizontalOptions="Start" WidthRequest="100"/>
                         </StackLayout>
                     </FlexLayout>
 

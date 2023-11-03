@@ -59,6 +59,28 @@
 
 	<ItemGroup>
 	  <None Remove="Resources\Images\bobafett.jpg" />
+	  <None Remove="Resources\Images\Elements\beryllium.png" />
+	  <None Remove="Resources\Images\Elements\boron.png" />
+	  <None Remove="Resources\Images\Elements\carbon.png" />
+	  <None Remove="Resources\Images\Elements\helium.png" />
+	  <None Remove="Resources\Images\Elements\hydrogen.png" />
+	  <None Remove="Resources\Images\Elements\lithium.png" />
+	  <None Remove="Resources\Images\Elements\nitrogen.png" />
+	  <None Remove="Resources\Images\Elements\oxygen.png" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <MauiImage Include="Resources\Images\Elements\hydrogen.png" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <MauiImage Include="Resources\Images\Elements\beryllium.png" />
+	  <MauiImage Include="Resources\Images\Elements\boron.png" />
+	  <MauiImage Include="Resources\Images\Elements\carbon.png" />
+	  <MauiImage Include="Resources\Images\Elements\helium.png" />
+	  <MauiImage Include="Resources\Images\Elements\lithium.png" />
+	  <MauiImage Include="Resources\Images\Elements\nitrogen.png" />
+	  <MauiImage Include="Resources\Images\Elements\oxygen.png" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -110,6 +132,10 @@
 	  <MauiXaml Update="ViewViewModels\StackLayoutContents\StackLayoutView.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Folder Include="ViewViewModels\Collections\ButtonCollections\AddEdit\" />
 	</ItemGroup>
 
 </Project>

@@ -5,5 +5,6 @@ public partial class ImageCollectionsView : ContentPage
 	public ImageCollectionsView()
 	{
 		InitializeComponent();
+		BindingContext = new ImageCollectionsViewModel();
 	}
 }
