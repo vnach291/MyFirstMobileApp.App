@@ -96,6 +96,12 @@
 	  <MauiXaml Update="ViewViewModels\AppImages\URI\URIView.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	  <MauiXaml Update="ViewViewModels\Collections\ButtonCollections\AddEdit\AddCollectionView.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="ViewViewModels\Collections\ButtonCollections\AddEdit\EditCollectionView.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="ViewViewModels\Collections\ButtonCollections\ButtonCollectionsView.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
@@ -132,10 +138,6 @@
 	  <MauiXaml Update="ViewViewModels\StackLayoutContents\StackLayoutView.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	</ItemGroup>
-
-	<ItemGroup>
-	  <Folder Include="ViewViewModels\Collections\ButtonCollections\AddEdit\" />
 	</ItemGroup>
 
 </Project>

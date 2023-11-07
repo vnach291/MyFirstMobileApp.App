@@ -5,5 +5,6 @@ public partial class ButtonCollectionsView : ContentPage
 	public ButtonCollectionsView()
 	{
 		InitializeComponent();
+		BindingContext = new ButtonCollectionsViewModel(); 
 	}
 }
