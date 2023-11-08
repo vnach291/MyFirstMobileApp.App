@@ -101,7 +101,7 @@ namespace MyFirstMobileApp.ViewViewModels.Collections.ButtonCollections
             // UpdateableCollectionWButtonsViewModel listens for this event and updates the movie list.
             //****************************************************************************************
             //Subscribe to the "UpdateMovies" messaging event to receive updated data from EditCollectionView            
-            MessagingCenter.Subscribe<PeriodicElements>(this, "UpdateMovies", updatedElement =>
+            MessagingCenter.Subscribe<PeriodicElements>(this, "UpdateElements", updatedElement =>
             {
                 //Update the movie in the collection with the edited data
                 ElementCollection[index] = updatedElement;
@@ -115,7 +115,5 @@ namespace MyFirstMobileApp.ViewViewModels.Collections.ButtonCollections
             ElementCollection.Remove(element);
         });
         #pragma warning restore CA1416 // Validate platform compatibility
-
-
     }
 }

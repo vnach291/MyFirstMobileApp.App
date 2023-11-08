@@ -33,15 +33,15 @@
                             <!-- FlexLayout with NameOfMovie and buttons -->
                             <FlexLayout AlignItems="Start">
                                 <Label Text="{Binding NameofElement, Mode=TwoWay}" FontAttributes="Bold"
-                                       HorizontalTextAlignment="Start" TextColor="Black" FontSize="Medium"
-                                       FlexLayout.Grow="1" />
+                                           HorizontalTextAlignment="Start" TextColor="Black" FontSize="Medium"
+                                           FlexLayout.Grow="1" />
 
                                 <StackLayout Orientation="Horizontal" HorizontalOptions="EndAndExpand">
                                     <Button Text="Update" Command="{Binding Path=BindingContext.UpdateCommand, Source={x:Reference ItemsCollectionView}}"
-                                            CommandParameter="{Binding .}" TextTransform="None" HorizontalOptions="End" />
+                                                 CommandParameter="{Binding .}" TextTransform="None" HorizontalOptions="End" />
 
                                     <Button Text="Delete" Command="{Binding Path=BindingContext.DeleteCommand, Source={x:Reference ItemsCollectionView}}"
-                                            CommandParameter="{Binding .}" TextTransform="None" HorizontalOptions="End" />
+                                                 CommandParameter="{Binding .}" TextTransform="None" HorizontalOptions="End" />
                                 </StackLayout>
                             </FlexLayout>
 

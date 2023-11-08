@@ -5,9 +5,9 @@
 
     <FlexLayout Padding="5" Direction="Column">
 
-        <Label Text="Element Title" FontAttributes="Bold" FontSize="Large" TextColor="Black" Margin="5,5,0,10" />
+        <Label Text="Element Name" FontAttributes="Bold" FontSize="Large" TextColor="Black" Margin="5,5,0,10" />
         
-        <Entry Placeholder="Enter Movie Title" FontAttributes="Bold" FontSize="Large" TextColor="Blue" HorizontalOptions="FillAndExpand"
+        <Entry Placeholder="Enter Element Name" FontAttributes="Bold" FontSize="Large" TextColor="Blue" HorizontalOptions="FillAndExpand"
                   Text="{Binding ElementName, Mode=TwoWay}" x:Name="ElementTitle" Margin="5,-10" />
         
         <Button Text="Save" Command="{Binding SaveBtnClicked}" BackgroundColor="Green" TextColor="White"

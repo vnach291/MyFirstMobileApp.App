@@ -19,7 +19,7 @@ namespace MyFirstMobileApp.ViewViewModels.CollectionsUpdatable.AddEdit
             SaveBtnClicked = new Command(PerformSave);
         }
 
-        public string MovieName
+        public string ElementName
         {
             get { return _elementName; }
 
