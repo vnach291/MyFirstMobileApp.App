@@ -67,6 +67,8 @@
 	  <None Remove="Resources\Images\Elements\lithium.png" />
 	  <None Remove="Resources\Images\Elements\nitrogen.png" />
 	  <None Remove="Resources\Images\Elements\oxygen.png" />
+	  <None Remove="Resources\Images\iconsdelete.png" />
+	  <None Remove="Resources\Images\iconsedit.png" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -115,6 +117,9 @@
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="ViewViewModels\Collections\NormalCollections\NormalCollectionsView.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="ViewViewModels\Controls\ControlsContents\ControlsView.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="ViewViewModels\InnerLayoutContents\InnerAbsoluteStackLayoutContents\InnerAbsoluteStackLayoutView.xaml">

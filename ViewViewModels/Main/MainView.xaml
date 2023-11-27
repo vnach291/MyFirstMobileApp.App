@@ -41,7 +41,8 @@
 
             <Button Grid.Row="1"
                     Grid.Column="1"
-                    Text="{Binding ControlTitle}" />
+                    Text="{Binding ControlTitle}" 
+                    Command="{Binding OnLayoutsClickedToControls}"/>
 
             <Button Grid.Row="2"
                     Grid.Column="0"

@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:model="clr-namespace:MyFirstMobileApp.Models.Entities"
              x:Class="MyFirstMobileApp.ViewViewModels.Collections.ButtonCollections.ButtonCollectionsView"
-             Title="ButtonCollectionsView">
+             Title="{Binding Title}">
 
     <!-- Applying a "Style" to the buttons. This will provide space between the buttons -->
     <ContentPage.Resources>
@@ -30,7 +30,7 @@
                 <CollectionView.ItemTemplate>
                     <DataTemplate x:DataType="model:PeriodicElements">
                         <StackLayout>
-                            <!-- FlexLayout with NameOfMovie and buttons -->
+                            <!-- FlexLayout with NameOfElement and buttons -->
                             <FlexLayout AlignItems="Start">
                                 <Label Text="{Binding NameofElement, Mode=TwoWay}" FontAttributes="Bold"
                                            HorizontalTextAlignment="Start" TextColor="Black" FontSize="Medium"
