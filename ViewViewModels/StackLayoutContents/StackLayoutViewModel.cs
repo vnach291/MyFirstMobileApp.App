@@ -34,12 +34,7 @@ namespace MyFirstMobileApp.ViewViewModels.StackLayoutContents
         public StackLayoutViewModel() 
         {
             Title = TitleLayouts.PageTitle;
-            InnerStackLayoutTitle = TitleLayouts.InnerStackLayoutTitle;
-            VerticalStackTitle = TitleLayouts.VerticalStackTitle;
-            HorizontalStackTitle = TitleLayouts.HorizontalStackTitle;
-            AbsoluteLayoutTitle = TitleLayouts.AbsoluteLayoutTitle;
-            FlexLayoutTitle = TitleLayouts.FlexLayoutTitle;
-
+            
             OnLayoutsClicked = new Command(OnLayoutsClickedAsync);
             OnLayoutsClickedToVerticalStack = new Command(OnLayoutsClickedAsyncToVerticalStack);
             OnLayoutsClickedToHorizontalStack = new Command(OnLayoutsClickedAsyncToHorizontalStack);
