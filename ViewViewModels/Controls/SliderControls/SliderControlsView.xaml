@@ -5,9 +5,9 @@
              Title="Test">
     <StackLayout>
 
-        <BoxView Color="Blue" Opacity="{"{Binding Value, Source={x:Reference slider}}" HeightRequest="25" HorizontalOptions="CenterAndExpand" />
+        <BoxView Color="Blue" Opacity="{Binding Value, Source={x:Reference slider}}" HeightRequest="25" HorizontalOptions="CenterAndExpand" />
 
-        <Slider x:Name="slider" Value="0.5" ThumbColor="yellow" MaximumTrackColor="BlueViolet" MinimumTrackColor="DarkOrange" />
+        <Slider x:Name="slider" Value="0.5" ThumbColor="MediumPurple" MaximumTrackColor="BlueViolet" MinimumTrackColor="DarkOrange" />
 
         <Label x:Name="SliderValue" Text="{Binding Value, Source={x:Reference slider}, StringFormat='Value of the Slider is {0:F2}'}" FontAttributes="Bold" FontSize="Large"
                HorizontalOptions="Center" />

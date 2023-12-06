@@ -3,10 +3,18 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MyFirstMobileApp.ViewViewModels.Controls.StepperControls.StepperControlsView"
              Title="StepperControlsView">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+    
+    <StackLayout Margin="20">
+
+        <Label x:Name="RotatingText" Text="RotatingText!!"
+               HorizontalOptions="Center" VerticalOptions="CenterAndExpand"/>
+
+        <Stepper x:Name="stepper" Maximum="360" BackgroundColor="#ffb8c8" 
+                 Increment="15" HorizontalOptions="Center" ValueChanged="OnStepperValueChanged"/>
+
+        <Label x:Name="DisplayLabel" FontSize="Large" FontAttributes="Bold" 
+               Text="{Binding Source={x:Reference stepper}, Path=Value, StringFormat='The Stepper value is {0:f0}'}"
+               HorizontalOptions="Center" TextColor="#000000"/>
+
+    </StackLayout>
 </ContentPage>
