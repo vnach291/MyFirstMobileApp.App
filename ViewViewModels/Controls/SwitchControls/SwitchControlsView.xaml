@@ -3,10 +3,20 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MyFirstMobileApp.ViewViewModels.Controls.SwitchControls.SwitchControlsView"
              Title="SwitchControlsView">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+    
+    <FlexLayout Direction="Column" JustifyContent="Center" AlignItems="Center" 
+                HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+        <Label Text="* 明日方舟 *" x:Name="label1" FontSize="Large" 
+               TextColor="#ffb8c8" FontAttributes="Bold"/>
+
+        <Switch x:Name="switch1" IsToggled="{Binding Button1Initial}" 
+                Toggled="Switch1Toggled" ThumbColor="#dddddd" OnColor="#ffb8c8"/>
+
+        <Label Text="-- Arknights --" x:Name="label2" FontSize="Large" 
+               TextColor="#000000" FontAttributes="Bold"/>
+
+        <Switch x:Name="switch2" IsToggled="{Binding Button2Initial}" 
+                Toggled="Switch2Toggled" ThumbColor="#dddddd" OnColor="#03fcd3"/>
+    </FlexLayout>
+    
 </ContentPage>
