@@ -5,13 +5,13 @@
              Title="{Binding Title}">
 
     <StackLayout VerticalOptions="Center">
-        <Label Text="Result from Entry Page" FontSize="Title" FontAttributes="Bold"
-               TextColor="Blue" HorizontalOptions="Center" />
+        <Entry x:Name="EntryValue" Placeholder="Enter Text Here" 
+               PlaceholderColor="#777777" TextColor="#ffb8c8" WidthRequest="300" HorizontalOptions="Center"/>
 
-        <BoxView HeightRequest="3" BackgroundColor="#000000" WidthRequest="300" />
+        <BoxView HeightRequest="2" BackgroundColor="#000000" WidthRequest="320"/>
 
-        <Label Text="{Binding EntryText}" FontSize="Title" TextColor="DarkRed"
-               FontAttributes="Bold" HorizontalOptions="Center" />
-        
+        <Button Text="Next" HorizontalOptions="Center" Margin="10" 
+                TextColor="#ffffff" BackgroundColor="#ffb8c8" Clicked=""/>
     </StackLayout>
+    
 </ContentPage>

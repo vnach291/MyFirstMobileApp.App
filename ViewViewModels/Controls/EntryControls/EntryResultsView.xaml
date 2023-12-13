@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MyFirstMobileApp.ViewViewModels.Controls.EntryControls.EntryResultsView"
+             Title="EntryResultsView">
+    
+    <StackLayout VerticalOptions="Center">
+        <Label TextColor="Green" Text="Entry Value:"/>
+
+        <BoxView HeightRequest="2" BackgroundColor="#000000" WidthRequest="320" HorizontalOptions="Center"/>
+
+        <Label TextColor="Blue" Text="{Binding EntryValueText}"/>
+    </StackLayout>
+    
+</ContentPage>
