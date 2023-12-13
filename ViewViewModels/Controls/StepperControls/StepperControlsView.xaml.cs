@@ -16,6 +16,9 @@ public partial class StepperControlsView : ContentPage
         int G = (int)(value / 360 * 184);
         int B = (int)(value / 360 * 200);
         DisplayLabel.TextColor = Color.FromRgb(R, G, B);
+        RotatingText.TextColor = Color.FromRgb(R, G, B);
         DisplayLabel.Text = string.Format("The Stepper value is {0}", value);
     }
+
+    
 }

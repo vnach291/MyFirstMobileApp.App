@@ -2,19 +2,19 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MyFirstMobileApp.ViewViewModels.Controls.StepperControls.StepperControlsView"
-             Title="StepperControlsView">
+             Title="{Binding Title}">
     
     <StackLayout Margin="20">
 
-        <Label x:Name="RotatingText" Text="RotatingText!!"
-               HorizontalOptions="Center" VerticalOptions="CenterAndExpand"/>
+        <Label x:Name="RotatingText" Text="{Binding Source={x:Reference stepper}, Path=Value, StringFormat='ROTATING TEXT !!!!!'}" FontSize="Large" FontAttributes="Bold"
+               HorizontalOptions="Center" VerticalOptions="CenterAndExpand" TextColor="Azure"/>
 
-        <Stepper x:Name="stepper" Maximum="360" BackgroundColor="#ffb8c8" 
+        <Stepper x:Name="stepper" Maximum="360" BackgroundColor="Orange" 
                  Increment="15" HorizontalOptions="Center" ValueChanged="OnStepperValueChanged"/>
 
         <Label x:Name="DisplayLabel" FontSize="Large" FontAttributes="Bold" 
                Text="{Binding Source={x:Reference stepper}, Path=Value, StringFormat='The Stepper value is {0:f0}'}"
-               HorizontalOptions="Center" TextColor="#000000"/>
+               HorizontalOptions="Center" TextColor="Azure"/>
 
     </StackLayout>
 </ContentPage>

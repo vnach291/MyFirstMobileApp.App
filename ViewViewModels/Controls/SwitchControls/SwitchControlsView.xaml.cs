@@ -12,7 +12,7 @@ public partial class SwitchControlsView : ContentPage
     {
         if (e.Value == false)
         {
-            label1.TextColor = Color.FromArgb("#000000");
+            label1.TextColor = Color.FromArgb("#228b22");
         }
         else
         {
@@ -24,7 +24,7 @@ public partial class SwitchControlsView : ContentPage
     {
         if (e.Value == false)
         {
-            label2.TextColor = Color.FromArgb("000000");
+            label2.TextColor = Color.FromArgb("#ff5f15");
         }
         else
         {

@@ -1,4 +1,5 @@
-﻿using MyFirstMobileApp.ViewModels;
+﻿using MyFirstMobileApp.Models;
+using MyFirstMobileApp.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,11 +12,10 @@ namespace MyFirstMobileApp.ViewViewModels.Controls.SwitchControls
     {
         public bool Button1Initial { get; set; } = true;
         public bool Button2Initial { get; set; } = false;
-    
-        public SwitchControlsViewModel()
-        {
-            //
-        }
+
+        public string Title { get; set; } = TitleControls.SwitchTitle;
+
+       
 
 
     }

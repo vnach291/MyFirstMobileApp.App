@@ -2,21 +2,22 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MyFirstMobileApp.ViewViewModels.Controls.SwitchControls.SwitchControlsView"
-             Title="SwitchControlsView">
+             Title="{Binding Title}">
     
     <FlexLayout Direction="Column" JustifyContent="Center" AlignItems="Center" 
                 HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
-        <Label Text="* 明日方舟 *" x:Name="label1" FontSize="Large" 
-               TextColor="#ffb8c8" FontAttributes="Bold"/>
+        
+        <Label Text="Wow Hello!" x:Name="label1" FontSize="Large" 
+               TextColor="Green" FontAttributes="Bold"/>
 
         <Switch x:Name="switch1" IsToggled="{Binding Button1Initial}" 
-                Toggled="Switch1Toggled" ThumbColor="#dddddd" OnColor="#ffb8c8"/>
+                Toggled="Switch1Toggled" ThumbColor="Goldenrod" OnColor="#f6cefc" />
 
-        <Label Text="-- Arknights --" x:Name="label2" FontSize="Large" 
-               TextColor="#000000" FontAttributes="Bold"/>
+        <Label Text="This is super cool" x:Name="label2" FontSize="Large" 
+               TextColor="Orange" FontAttributes="Bold"/>
 
         <Switch x:Name="switch2" IsToggled="{Binding Button2Initial}" 
-                Toggled="Switch2Toggled" ThumbColor="#dddddd" OnColor="#03fcd3"/>
+                Toggled="Switch2Toggled" ThumbColor="Goldenrod" OnColor="#03fcd3"/>
     </FlexLayout>
     
 </ContentPage>
