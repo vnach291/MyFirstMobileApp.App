@@ -131,6 +131,12 @@
 	  <MauiXaml Update="ViewViewModels\Controls\EntryControls\EntryResultsView.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	  <MauiXaml Update="ViewViewModels\Controls\PickerControls\DnTPicker\DnTPickerView.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="ViewViewModels\Controls\PickerControls\ListPicker\ListPickerView.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="ViewViewModels\Controls\PickerControls\PickerControlsView.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>

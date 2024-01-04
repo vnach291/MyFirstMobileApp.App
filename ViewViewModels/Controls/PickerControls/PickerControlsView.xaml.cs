@@ -5,5 +5,6 @@ public partial class PickerControlsView : ContentPage
 	public PickerControlsView()
 	{
 		InitializeComponent();
+		new PickerControlsViewModel(); 
 	}
 }

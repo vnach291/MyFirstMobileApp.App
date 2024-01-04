@@ -1,22 +1,26 @@
 ﻿using MyFirstMobileApp.Models;
+using MyFirstMobileApp.Models.ControlsModels;
 using MyFirstMobileApp.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Input;
 
 namespace MyFirstMobileApp.ViewViewModels.Controls.EntryControls
 {
     public class EntryControlsViewModel : BaseViewModel
     {
-        private string _entryText; 
+        public ICommand OnEntryClicked { get; }
+        
+        private string _entryText = string.Empty; 
         public string Title { get; set; } = TitleControls.EntryTitle;
 
-        public EntryControlsViewModel(string entryText)
+        public EntryControlsViewModel()
         {
-            Title = TitlesEntry.EntryResultTitle; 
-            _entryText = entryText;
+            Title = TitleEntries.EntryResultTitle; 
+            OnEntryClicked = new Command(OnEntryClickedAsync);
         }
 
         public string EntryText
@@ -28,9 +32,20 @@ namespace MyFirstMobileApp.ViewViewModels.Controls.EntryControls
 
             set
             {
-                if(_entryText is value)
+                if(_entryText != value)
                     SetProperty(ref _entryText, value); 
             }
+        }
+
+        private async void OnEntryClickedAsync(object obj)
+        {
+            if (string.IsNullOrEmpty(_entryText.Trim()))
+            {
+                await Application.Current.MainPage.DisplayAlert(TitleEntries.EntryVMTitle, "Entry can't be empty!", "OK");
+                return; 
+            }
+
+            await Application.Current.MainPage.Navigation.PushAsync(new EntryResultsView(_entryText));
         }
     }
 }

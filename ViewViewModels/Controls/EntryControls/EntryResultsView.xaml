@@ -3,13 +3,25 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MyFirstMobileApp.ViewViewModels.Controls.EntryControls.EntryResultsView"
              Title="EntryResultsView">
-    
+
     <StackLayout VerticalOptions="Center">
-        <Label TextColor="Green" Text="Entry Value:"/>
 
-        <BoxView HeightRequest="2" BackgroundColor="#000000" WidthRequest="320" HorizontalOptions="Center"/>
+        <Label Text="Result from Entry Page"
+               FontSize="Title"
+               FontAttributes="Bold"
+               TextColor="LawnGreen"
+               HorizontalOptions="Center" />
 
-        <Label TextColor="Blue" Text="{Binding EntryValueText}"/>
+        <BoxView HeightRequest="3"
+                 BackgroundColor="White"
+                 WidthRequest="300" />
+
+        <Label Text="{Binding EntryText}"
+               FontSize="Title"
+               TextColor="LightBlue"
+               FontAttributes="Bold"
+               HorizontalOptions="Center" />
+
     </StackLayout>
-    
+
 </ContentPage>
