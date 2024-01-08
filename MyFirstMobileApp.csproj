@@ -69,6 +69,7 @@
 	  <None Remove="Resources\Images\Elements\oxygen.png" />
 	  <None Remove="Resources\Images\iconsdelete.png" />
 	  <None Remove="Resources\Images\iconsedit.png" />
+	  <None Remove="Resources\Images\submit.png" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -83,6 +84,15 @@
 	  <MauiImage Include="Resources\Images\Elements\lithium.png" />
 	  <MauiImage Include="Resources\Images\Elements\nitrogen.png" />
 	  <MauiImage Include="Resources\Images\Elements\oxygen.png" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Compile Update="ViewViewModels\Controls\PickerControls\PickerVM\PickerVMView.xaml.cs">
+	    <DependentUpon>PickerVMView.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="ViewViewModels\Controls\PickerControls\PickerXAML\PickerXAMLView.xaml.cs">
+	    <DependentUpon>PickerXAMLView.xaml</DependentUpon>
+	  </Compile>
 	</ItemGroup>
 
 	<ItemGroup>
@@ -131,10 +141,10 @@
 	  <MauiXaml Update="ViewViewModels\Controls\EntryControls\EntryResultsView.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="ViewViewModels\Controls\PickerControls\DnTPicker\DnTPickerView.xaml">
+	  <MauiXaml Update="ViewViewModels\Controls\PickerControls\PickerVM\PickerVMView.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="ViewViewModels\Controls\PickerControls\ListPicker\ListPickerView.xaml">
+	  <MauiXaml Update="ViewViewModels\Controls\PickerControls\PickerXAML\PickerXAMLView.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="ViewViewModels\Controls\PickerControls\PickerControlsView.xaml">

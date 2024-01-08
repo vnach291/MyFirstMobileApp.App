@@ -4,12 +4,27 @@
              x:Class="MyFirstMobileApp.ViewViewModels.Controls.PickerControls.PickerControlsView"
              Title="{Binding Title}">
 
-    <StackLayout VerticalOptions="Center">
-        <ImageButton Command="{Binding ListPickerClicked}"/>
+    <StackLayout>
+        <ImageButton Source="Images/pickerxaml.png"
+                     VerticalOptions="StartAndExpand"
+                     HorizontalOptions="Center"
+                     Command="{Binding OnXAMLClicked}" />
 
-        <BoxView HeightRequest="2" Color="#888888" WidthRequest="500" HorizontalOptions="Center"/>
+        <BoxView MinimumWidthRequest="30"
+                 BackgroundColor="Black" />
 
-        <ImageButton Command="{Binding DnTPickerClicked}"/>
+        <Label Text="Welcome to the Picker!" 
+               FontSize="60" 
+               HorizontalOptions="CenterAndExpand" 
+               VerticalOptions="CenterAndExpand" 
+               TextColor="WhiteSmoke" 
+               FontFamily="OpenSans-Semibold" 
+               Margin="22"/>
+
+        <ImageButton Source="Images/pickervm.png"
+                     VerticalOptions="CenterAndExpand"
+                     HorizontalOptions="End"
+                     Command="{Binding OnVMClicked}" />
     </StackLayout>
-    
+
 </ContentPage>

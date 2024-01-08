@@ -11,25 +11,25 @@ namespace MyFirstMobileApp.ViewViewModels.Controls.PickerControls
 {
     internal class PickerControlsViewModel : BaseViewModel
     {
-        public ICommand DnTPickerClicked { get; set; }
-        public ICommand ListPickerClicked { get; set; }
+        public ICommand OnXAMLClicked { get; set; }
+        public ICommand OnVMClicked { get; set; }
         public PickerControlsViewModel()
         {
             // change 
             //Title = TitleAPPControl
 
-            DnTPickerClicked = new Command(DnTClickedAsync);
-            ListPickerClicked = new Command(ListClickedAsync);
+            OnXAMLClicked = new Command(OnXAMLClickedAsync);
+            OnVMClicked = new Command(OnVMClickedAsync);
         }
 
-        public async void DnTClickedAsync()
+        public async void OnXAMLClickedAsync()
         {
-            await Application.Current.MainPage.Navigation.PushAsync(new DnTPickerView()); 
+            await Application.Current.MainPage.Navigation.PushAsync(new PickerXAMLView()); 
         }
 
-        public async void ListClickedAsync()
+        public async void OnVMClickedAsync()
         {
-            await Application.Current.MainPage.Navigation.PushAsync(new ListPickerView());
+            await Application.Current.MainPage.Navigation.PushAsync(new PickerVMView());
         }
 
 
