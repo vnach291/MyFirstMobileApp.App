@@ -1,5 +1,7 @@
-﻿using MyFirstMobileApp.ViewModels;
-using MyFirstMobileApp.ViewViewModels.Controls.PickerControls.ListPicker;
+﻿using MyFirstMobileApp.Models.ControlsModels;
+using MyFirstMobileApp.ViewModels;
+using MyFirstMobileApp.ViewViewModels.Controls.PickerControls.PickerVM;
+using MyFirstMobileApp.ViewViewModels.Controls.PickerControls.PickerXAML;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,8 +17,8 @@ namespace MyFirstMobileApp.ViewViewModels.Controls.PickerControls
         public ICommand OnVMClicked { get; set; }
         public PickerControlsViewModel()
         {
-            // change 
-            //Title = TitleAPPControl
+
+            Title = TitlePickers.PickerViewTitle;
 
             OnXAMLClicked = new Command(OnXAMLClickedAsync);
             OnVMClicked = new Command(OnVMClickedAsync);

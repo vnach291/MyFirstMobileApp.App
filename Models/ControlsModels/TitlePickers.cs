@@ -8,10 +8,10 @@ namespace MyFirstMobileApp.Models.ControlsModels
 {
     public static class TitlePickers
     {
-        public static string PickerViewTitle { get; set; } = "Entry";
+        public static string PickerViewTitle { get; set; } = "Picker";
         public static string PickerXAMLTitle { get; set; } = "Picker XAML";
         public static string PickerVMTitle { get; set; } = "Picker VM";
-        public static string EntryResultTitle { get; set; } = "Entry Result";
+        public static string PickerResultTitle { get; set; } = "Picker Result";
 
     }
 }

@@ -35,8 +35,8 @@ namespace MyFirstMobileApp.Models.Entities
                 new ElementDiagrams("Beryllium", ImageSource.FromFile("Images/Elements/beryllium.png"), "Be"),
                 new ElementDiagrams("Boron", ImageSource.FromFile("Images/Elements/boron.png"), "B"),
                 new ElementDiagrams("Carbon", ImageSource.FromFile("Images/Elements/carbon.png"), "C"),
-                new ElementDiagrams("Oxygen", ImageSource.FromFile("Images/Elements/nitrogen.png"), "N"),
-                new ElementDiagrams("Nitrogen", ImageSource.FromFile("Images/Elements/oxygen.png"), "O")
+                new ElementDiagrams("Nitrogen", ImageSource.FromFile("Images/Elements/nitrogen.png"), "N"),
+                new ElementDiagrams("Oxygen", ImageSource.FromFile("Images/Elements/oxygen.png"), "O")
             };
 
             return elements; 

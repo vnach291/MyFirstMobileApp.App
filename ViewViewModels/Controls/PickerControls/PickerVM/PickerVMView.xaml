@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MyFirstMobileApp.ViewViewModels.Controls.PickerControls.PickerVM.PickerVMView"
-             Title="DnTPickerView">
+             Title="{Binding Title}">
     
     <StackLayout>
 
@@ -23,13 +23,13 @@
             <Picker x:Name="pickerVM"
                     Title="Select a Character"
                     TitleColor="DarkRed"
-                    SelectedItem="{Binding SelectedCharacter}"
+                    SelectedItem="{Binding SelectedElement}"
                     FontSize="Large"
                     FontAttributes="Bold,Italic"
                     VerticalOptions="FillAndExpand"
                     HorizontalOptions="Center"
                     WidthRequest="300"
-                    ItemsSource="{Binding CharacterList}" />
+                    ItemsSource="{Binding ElementList}" />
 
             <BoxView HeightRequest="3"
                      BackgroundColor="Black"

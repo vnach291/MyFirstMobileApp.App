@@ -2,6 +2,7 @@
 using MyFirstMobileApp.Models.ControlsModels;
 using MyFirstMobileApp.Models.Entities;
 using MyFirstMobileApp.ViewModels;
+using MyFirstMobileApp.ViewViewModels.Controls.PickerControls.PickerResults;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -20,7 +21,7 @@ namespace MyFirstMobileApp.ViewViewModels.Controls.PickerControls.PickerXAML
 
         public PickerXAMLViewModel()
         {
-            //Title = 
+            Title = TitlePickers.PickerXAMLTitle; 
             OnSubmitClicked = new Command(OnSubmitClickedAsync);
         }
 
@@ -46,7 +47,7 @@ namespace MyFirstMobileApp.ViewViewModels.Controls.PickerControls.PickerXAML
             if(String.IsNullOrEmpty(_selectedElement))
             {
                 await Application.Current.MainPage.DisplayAlert(TitlePickers.PickerXAMLTitle, "A selection must be made", "OK");
-                return
+                return;
             }
             
 

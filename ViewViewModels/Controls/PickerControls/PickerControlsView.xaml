@@ -5,7 +5,7 @@
              Title="{Binding Title}">
 
     <StackLayout>
-        <ImageButton Source="Images/pickerxaml.png"
+        <ImageButton Source="Images/xaml.png"
                      VerticalOptions="StartAndExpand"
                      HorizontalOptions="Center"
                      Command="{Binding OnXAMLClicked}" />
@@ -17,11 +17,11 @@
                FontSize="60" 
                HorizontalOptions="CenterAndExpand" 
                VerticalOptions="CenterAndExpand" 
-               TextColor="WhiteSmoke" 
+               TextColor="LightGreen" 
                FontFamily="OpenSans-Semibold" 
                Margin="22"/>
 
-        <ImageButton Source="Images/pickervm.png"
+        <ImageButton Source="Images/vm.png"
                      VerticalOptions="CenterAndExpand"
                      HorizontalOptions="End"
                      Command="{Binding OnVMClicked}" />

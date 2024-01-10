@@ -5,5 +5,6 @@ public partial class DatePickerControlsView : ContentPage
 	public DatePickerControlsView()
 	{
 		InitializeComponent();
+		BindingContext = new DatePickerControlsViewModel(); 
 	}
 }

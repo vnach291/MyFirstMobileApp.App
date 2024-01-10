@@ -1,6 +1,7 @@
 ﻿using MyFirstMobileApp.Models.ControlsModels;
 using MyFirstMobileApp.Models.Entities;
 using MyFirstMobileApp.ViewModels;
+using MyFirstMobileApp.ViewViewModels.Controls.PickerControls.PickerResults;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -23,8 +24,8 @@ namespace MyFirstMobileApp.ViewViewModels.Controls.PickerControls.PickerVM
 
         public PickerVMViewModel()
         {
-            // Set Title
-            //Title = 
+
+            Title = TitlePickers.PickerVMTitle; 
 
             // Get elements from ElementDiagrams to Populate Picker
             this.GetElementList();

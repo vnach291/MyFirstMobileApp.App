@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="MyFirstMobileApp.ViewViewModels.Controls.PickerControls.PickerXAML.ListPickerView"
+             x:Class="MyFirstMobileApp.ViewViewModels.Controls.PickerControls.PickerXAML.PickerXAMLView"
              Title="{Binding Title}">
 
     <StackLayout>
@@ -20,9 +20,9 @@
         <StackLayout HorizontalOptions="CenterAndExpand">
 
             <Picker x:Name="pickerXAML"
-                    Title="Select a Character"
+                    Title="Select an Element"
                     TitleColor="DarkRed"
-                    SelectedItem="{Binding SelectedCharacter}"
+                    SelectedItem="{Binding SelectedElement}"
                     HorizontalOptions="CenterAndExpand"
                     FontSize="Large">
 
@@ -30,18 +30,15 @@
 
                     <x:Array Type="{x:Type x:String}">
 
-                        <x:String>Binks</x:String>
-                        <x:String>Chewie</x:String>
-                        <x:String>Darth Vader</x:String>
-                        <x:String>Grievous</x:String>
-                        <x:String>Han Solo</x:String>
-                        <x:String>Leia</x:String>
-                        <x:String>Luke</x:String>
-                        <x:String>Obi Wan Kenobi</x:String>
-                        <x:String>Palpatine</x:String>
-                        <x:String>Mace Windu</x:String>
-                        <x:String>Yoda</x:String>
-
+                        <x:String>Hydrogen</x:String>
+                        <x:String>Helium</x:String>
+                        <x:String>Lithium</x:String>
+                        <x:String>Beryllium</x:String>
+                        <x:String>Boron</x:String>
+                        <x:String>Carbon</x:String>
+                        <x:String>Nitrogen</x:String>
+                        <x:String>Oxygen</x:String>
+                   
                     </x:Array>
 
                 </Picker.ItemsSource>

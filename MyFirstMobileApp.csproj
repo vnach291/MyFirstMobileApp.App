@@ -70,6 +70,8 @@
 	  <None Remove="Resources\Images\iconsdelete.png" />
 	  <None Remove="Resources\Images\iconsedit.png" />
 	  <None Remove="Resources\Images\submit.png" />
+	  <None Remove="Resources\Images\vm.png" />
+	  <None Remove="Resources\Images\xaml.png" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -135,10 +137,19 @@
 	  <MauiXaml Update="ViewViewModels\Controls\DatePickerControls\DatePickerControlsView.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	  <MauiXaml Update="ViewViewModels\Controls\DatePickerControls\DatePickerVM\DatePickerVMView.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="ViewViewModels\Controls\DatePickerControls\DatePickerXAML\DatePickerXAMLView.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="ViewViewModels\Controls\EntryControls\EntryControlsView.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="ViewViewModels\Controls\EntryControls\EntryResultsView.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="ViewViewModels\Controls\PickerControls\PickerResults\PickerResultsView.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="ViewViewModels\Controls\PickerControls\PickerVM\PickerVMView.xaml">

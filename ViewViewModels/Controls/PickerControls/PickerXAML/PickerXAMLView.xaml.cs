@@ -1,10 +1,8 @@
-using MyFirstMobileApp.ViewViewModels.Controls.PickerControls.PickerXAML;
-
 namespace MyFirstMobileApp.ViewViewModels.Controls.PickerControls.PickerXAML;
 
-public partial class ListPickerView : ContentPage
+public partial class PickerXAMLView : ContentPage
 {
-	public ListPickerView()
+	public PickerXAMLView()
 	{
 		InitializeComponent();
 		BindingContext = new PickerXAMLViewModel(); 
