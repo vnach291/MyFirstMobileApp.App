@@ -11,7 +11,7 @@ namespace MyFirstMobileApp.ViewViewModels.Controls.DatePickerControls.DatePicker
 {
     public class DatePickerVMViewModel : BaseViewModel
     {
-        public ImageSource SubmitButton { get; } = "Images/submitbutton.png";
+        public ImageSource SubmitButton { get; } = "Images/submit.png";
 
         public ICommand SubmitCommand => new Command(OnSubmit);
 

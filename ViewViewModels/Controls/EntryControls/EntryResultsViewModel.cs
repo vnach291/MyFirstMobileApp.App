@@ -1,4 +1,5 @@
 ﻿using MyFirstMobileApp.Models;
+using MyFirstMobileApp.Models.ControlsModels;
 using MyFirstMobileApp.ViewModels;
 using System;
 using System.Collections.Generic;
@@ -13,7 +14,7 @@ namespace MyFirstMobileApp.ViewViewModels.Controls.EntryControls
         private string _entryText; 
         public EntryResultsViewModel(string entryText)
         {
-            Title = TitleControls.EntryTitle;
+            Title = TitleEntries.EntryResultTitle;
             _entryText = entryText;
         }
 

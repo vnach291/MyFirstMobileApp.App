@@ -59,6 +59,8 @@
 
 	<ItemGroup>
 	  <None Remove="Resources\Images\bobafett.jpg" />
+	  <None Remove="Resources\Images\dpvm.png" />
+	  <None Remove="Resources\Images\dpxaml.png" />
 	  <None Remove="Resources\Images\Elements\beryllium.png" />
 	  <None Remove="Resources\Images\Elements\boron.png" />
 	  <None Remove="Resources\Images\Elements\carbon.png" />

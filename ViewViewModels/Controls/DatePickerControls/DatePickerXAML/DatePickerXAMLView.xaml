@@ -52,7 +52,8 @@
                     InputTransparent="False" />
 
         <Button BackgroundColor="Transparent"
-                ImageSource="Images/submitbutton.png"
+                ImageSource="Images/submit.png"
+                Scale="0.7"
                 Clicked="Button_Clicked" />
 
     </StackLayout>

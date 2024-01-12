@@ -6,7 +6,7 @@
     
     <StackLayout>
 
-        <ImageButton Source="Images/datepickerxaml.png" 
+        <ImageButton Source="Images/dpxaml.png" 
                      Command="{Binding OnDatePickerXAMLClicked}" 
                      VerticalOptions="StartAndExpand" />
 
@@ -18,7 +18,7 @@
                FontFamily="OpenSans-Semibold" 
                Margin="22"/>
 
-        <ImageButton Source="Images/datepickervm.png" 
+        <ImageButton Source="Images/dpvm.png" 
                      Command="{Binding OnDatePickerVMClicked}" 
                      VerticalOptions="EndAndExpand" />
 

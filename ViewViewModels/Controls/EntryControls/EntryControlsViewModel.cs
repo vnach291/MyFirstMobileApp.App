@@ -15,11 +15,11 @@ namespace MyFirstMobileApp.ViewViewModels.Controls.EntryControls
         public ICommand OnEntryClicked { get; }
         
         private string _entryText = string.Empty; 
-        public string Title { get; set; } = TitleControls.EntryTitle;
+        
 
         public EntryControlsViewModel()
         {
-            Title = TitleEntries.EntryResultTitle; 
+            Title = TitleEntries.EntryVMTitle; 
             OnEntryClicked = new Command(OnEntryClickedAsync);
         }
 
