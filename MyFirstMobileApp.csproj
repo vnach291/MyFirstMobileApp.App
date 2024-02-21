@@ -91,6 +91,10 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <PackageReference Include="sqlite-net-pcl" Version="1.8.116" />
+	</ItemGroup>
+
+	<ItemGroup>
 	  <Compile Update="ViewViewModels\Controls\PickerControls\PickerVM\PickerVMView.xaml.cs">
 	    <DependentUpon>PickerVMView.xaml</DependentUpon>
 	  </Compile>
@@ -110,6 +114,12 @@
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="ViewViewModels\AppImages\URI\URIView.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="ViewViewModels\Cars\CarMgmtView.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="ViewViewModels\Cars\CarView.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="ViewViewModels\Collections\ButtonCollections\AddEdit\AddCollectionView.xaml">
