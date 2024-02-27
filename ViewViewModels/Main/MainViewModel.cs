@@ -1,6 +1,7 @@
 ﻿using MyFirstMobileApp.Models;
 using MyFirstMobileApp.ViewModels;
 using MyFirstMobileApp.ViewViewModels.AppImages.AppImagesContents;
+using MyFirstMobileApp.ViewViewModels.Cars;
 using MyFirstMobileApp.ViewViewModels.Collections.CollectionsContents;
 using MyFirstMobileApp.ViewViewModels.Controls.ControlsContents;
 using MyFirstMobileApp.ViewViewModels.StackLayoutContents;
@@ -30,6 +31,7 @@ namespace MyFirstMobileApp.ViewViewModels.Main
         public ICommand OnLayoutsClickedToImages { get; set; }
         public ICommand OnLayoutsClickedToCollections { get; set; }
         public ICommand OnLayoutsClickedToControls{ get; set; }
+        public ICommand OnLayoutsClickedToSQLLite { get; set; }
 
 
         public MainViewModel() 
@@ -47,6 +49,7 @@ namespace MyFirstMobileApp.ViewViewModels.Main
             OnLayoutsClickedToImages = new Command(OnLayoutsClickedAsyncToImages);
             OnLayoutsClickedToCollections = new Command(OnLayoutsClickedAsyncToCollections);
             OnLayoutsClickedToControls = new Command(OnLayoutsClickedAsyncToControls);
+            OnLayoutsClickedToSQLLite = new Command(OnLayoutsClickedAsyncToSQLLite);
 
         }
         private async void OnLayoutsClickedAsync()
@@ -66,6 +69,10 @@ namespace MyFirstMobileApp.ViewViewModels.Main
         private async void OnLayoutsClickedAsyncToControls()
         {
             await Application.Current.MainPage.Navigation.PushAsync(new ControlsView());
+        }
+        private async void OnLayoutsClickedAsyncToSQLLite()
+        {
+            await Application.Current.MainPage.Navigation.PushAsync(new CarView());
         }
 
     }
